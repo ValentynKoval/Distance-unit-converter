@@ -8,10 +8,15 @@ public class Main {
         double klm = 90;
         double mi = 20;
         double kilometers = convMiToKlm(mi);
-        System.out.println("Kilometers: " + kilometers);
+        double miles = convKlmToMi(klm);
+        System.out.println("Kilometers: " + kilometers + " miles: " + miles);
     }
 
     private static double convMiToKlm(double mi) {
         return mi / CONV_K;
+    }
+
+    private static double convKlmToMi(double klm) {
+        return klm * CONV_K;
     }
 }
